@@ -22,8 +22,11 @@ let Calculator = {
 function actionApplyer(init, arr) {
     if (arr.length===0) {return init;} else
     {
-        let one = arr[0](init);
-        let two = arr[1](one);
-        return arr[2](two);
+        // let one = arr[0](init);
+        // let two = arr[1](one);
+        // return arr[2](two);
+        let myReducer = (total, element) => {return element(total)};
+        return arr.reduce(myReducer, init)
     }
 }
+
