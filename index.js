@@ -15,6 +15,20 @@ function wrapAdjective(value = "*"){
 
 let encouragingPromptFunction = wrapAdjective("%")("a dedicated programmer")
 
-  const Calculator = function(){
 
+
+const Calculator = {
+    add: function(value1, value2) { return value1 + value2},
+    subtract: function(value1, value2) { return value1 - value2},
+    multiply: function(value1, value2) { return value1 * value2},
+    divide: function(value1, value2) { return value1 / value2}
+}
+
+function actionApplyer(start, arr){
+    if (arr.length === 0){
+        return start
+    }
+    else {
+
+    }
 }
