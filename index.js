@@ -29,6 +29,6 @@ function actionApplyer(start, arr){
         return start
     }
     else {
-
+         return  Calculator.add((Calculator.multiply(start,2)),1000) % 7 
     }
 }
