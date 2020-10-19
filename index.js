@@ -14,3 +14,10 @@ function wrapAdjective(style="*") {
     }
 
 }
+
+const Calculator = {
+	functionToCreate: function(add) {
+      
+     }  
+  
+}
